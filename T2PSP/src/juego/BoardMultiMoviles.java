@@ -20,7 +20,7 @@ public class BoardMultiMoviles extends JPanel implements Runnable {
 	private Thread animator;
 	private final int DELAY = 50;
 	public Thread t_estrella;
-	public StarMovil estrella, star1;
+	public StarMovil estrella, estrella2;
 	public ArrayList<IMovil> moviles;
 
 	public BoardMultiMoviles() {
@@ -51,9 +51,10 @@ public class BoardMultiMoviles extends JPanel implements Runnable {
 		estrella.activar();
 		moviles.add(estrella);
 		
-		star1= new StarMovil(20,20,ii.getImage());
-		star1.activar();
-		moviles.add(star1);
+		estrella2 = new StarMovil(240, 240, ii.getImage());
+		estrella2.activar();
+		moviles.add(estrella2);
+
 		// estrella.activar();
 
 		/*
@@ -74,6 +75,10 @@ public class BoardMultiMoviles extends JPanel implements Runnable {
 		Graphics2D g2d = (Graphics2D) g;
 		// Estrella
 		g2d.drawImage(estrella.getImage(), estrella.getX(), estrella.getY(), this);
+		Toolkit.getDefaultToolkit().sync();
+		
+		//EStrella2
+		g2d.drawImage(estrella2.getImage(), estrella2.getX(), estrella2.getY(), this);
 		Toolkit.getDefaultToolkit().sync();
 	}
 
