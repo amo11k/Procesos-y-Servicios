@@ -10,7 +10,7 @@ public class Incrementador extends Thread{
 		this.contador = c;
 	}
 	
-	public synchronized void run(){
+	public void run(){
 		int valor_inicial = contador.getContador();
 		// hacemos que el hilo trabaje para nada		
 		for (int i = 0; i < 300; i++) {
