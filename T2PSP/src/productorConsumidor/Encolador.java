@@ -69,6 +69,16 @@ public class Encolador implements Runnable{
 			traza(p);
 			esperarPersona();
 			
+			p = new Persona ( "44444444D","Ruben","Rumano","Guey");
+			this.cola.insertar( p );
+			traza(p);
+			esperarPersona();
+			
+			p = new Persona ( "55555555E","Juani","Guadalajara","EA Games");
+			this.cola.insertar( p );
+			traza(p);
+			esperarPersona();
+			
 			
 		}
 	}
