@@ -126,10 +126,10 @@ public class EchoComunication extends JFrame {
 				else
 					out.println("La conexión es errónea");
 				String inputLine;
-				while ((inputLine = in.readLine()) != null) {
+				/*while ((inputLine = in.readLine()) != null) {
 					out.println(inputLine + " Host: " + clientSocket.getInetAddress().toString() + " Puerto: "
 							+ clientSocket.getLocalPort());
-				}
+				}*/
 			} finally {
 
 			}
